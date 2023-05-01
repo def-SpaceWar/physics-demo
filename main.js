@@ -1,5 +1,8 @@
 import './style.css'
 
+/**
+ * @type {{keys: number[], loop: number | undefined, canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D}} 
+ */
 const global = {
   keys: [],
   loop: undefined,
