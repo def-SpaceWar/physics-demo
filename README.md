@@ -4,7 +4,7 @@
 
 Download this repository using `git` or get a compressed form and uncompress it.
 Then run `npm install` and then `npm run dev` to run the code.
-All the important code are in:
+All the important code is in:
 - index.html
 - main.js
 - style.css
