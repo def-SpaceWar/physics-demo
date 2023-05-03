@@ -39,12 +39,15 @@ class MySquare {
     this.velocityY = 0;
     this.gravity = 600;
     this.drag = 0.99;
+    this.rotation = 0;
   }
 
   draw() {
     global.ctx.save(); // search up `ctx.save()` and `ctx.restore()` on w3schools
     global.ctx.fillStyle = this.color;
-    global.ctx.fillRect(this.x, this.y, this.w, this.h);
+    global.ctx.translate(this.x + this.w/2, this.y+this.h/2);
+    global.ctx.rotate(this.rotation);
+    global.ctx.fillRect(-this.w/2, -this.h/2, this.w, this.h);
     global.ctx.restore();
   }
 
