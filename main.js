@@ -94,7 +94,7 @@ class MySquare {
 // make the square
 const mySquare = new MySquare(0, 0, 50, 50, "#FF0000");
 
-const gameLoop = (before) => (now) => {
+const gameLoop = before => now => {
   const dt = (now - before) / 1000; // change in time
   // by default times are handled in milliseconds so
   // dt is divided by 1000
